@@ -5,5 +5,5 @@
 # specs.specFolder: the root level spec folder path. Typically it is under 'spec' folder.
 port: 8000
 specs:
-  rootFolder: /opt/var/slacker_runner/test
-  specFolder: /opt/var/slacker_runner/test/spec
+  rootFolder: /opt/slacker-test
+  specFolder: /opt/slacker-test/spec

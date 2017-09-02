@@ -22,7 +22,7 @@
     * [json output](/api/runspec/json/sample_1.rb)
     * [document output](/api/runspec/document/sample_1.rb)
 
-> This sample below assumes the slacker node runner service is running at port 80.
+> This sample below assumes the slacker node runner service is running at port 8000.
 
 ```bash
 # get the list of all *.rb files in spec folder and its sub folders.
@@ -31,7 +31,7 @@ curl -s http://localhost:8000/api/getspecs
 # executs all rspec examples in spec folder and sub folders and return the result..
 curl -s http://localhost:8000/api/runall/html # result output in html foramt
 curl -s http://localhost:8000/api/runall/json # result output in json format
-curl -s curl -s http://localhost:8000/api/runall/html # result output in plain text document foramt.
+curl -s http://localhost:8000/api/runall/html # result output in plain text document foramt.
 
 # execute a rspec example file and return the result,
 # rspec in the spec root folder.
