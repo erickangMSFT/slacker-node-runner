@@ -18,9 +18,9 @@
     * [json output](/api/runall/json)
     * [document output](/api/runall/document)
 * run a rspec file
-    * [html output](/api/runspec/html/sample_1.rb)
-    * [json output](/api/runspec/json/sample_1.rb)
-    * [document output](/api/runspec/document/sample_1.rb)
+    * [html output](/api/runspec/html/template_examples.rb)
+    * [json output](/api/runspec/json/template_examples.rb)
+    * [document output](/api/runspec/document/template_examples.rb)
 
 > This sample below assumes the slacker node runner service is running at port 8000.
 
@@ -35,9 +35,9 @@ curl -s http://localhost:8000/api/runall/html # result output in plain text docu
 
 # execute a rspec example file and return the result,
 # rspec in the spec root folder.
-http://localhost:8000/api/runspec/document/sample_1.rb # plain text document format.
-http://localhost:8000/api/runspec/json/sample_1.rb # json format.
-http://localhost:8000/api/runspec/html/sample_1.rb # html format.
+http://localhost:8000/api/runspec/document/template_examples.rb # plain text document format.
+http://localhost:8000/api/runspec/json/template_examples.rb # json format.
+http://localhost:8000/api/runspec/html/template_examples.rb # html format.
 
 # rspec in a sub folder or spec root foler.
 http://localhost:8000/api/runspec/document/website/activateWebsiteLogon.rb # pain text document format
