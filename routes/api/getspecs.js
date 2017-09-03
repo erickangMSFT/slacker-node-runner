@@ -9,7 +9,7 @@ var config = runnerConfig.getConfig(configFile)
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  child_process.exec('ls -R |grep "\.rb$"', { cwd: config.specs.specFolder }, function (err, specList) {
+  child_process.exec('ls -R */*.rb *.rb 2>/dev/null', { cwd: config.specs.specFolder }, function (err, specList) {
     if (!err) {
       var result = formatter.formatSpecList(specList);
       res.type('application/json');
